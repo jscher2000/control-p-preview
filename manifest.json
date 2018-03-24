@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "Control-P Preview",
+	"description": "Display Print Preview when you press Ctrl+p.",
+	"version": "0.1",
+	"developer": {
+		"name": "Jefferson \"jscher2000\" Scher",
+		"url": "https://github.com/jscher2000/control-p-preview"
+	},
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	},
+	"browser_action": {
+		"browser_style": true,
+		"default_icon": "icons/print.svg",
+		"default_title": "Control-P Previews (click to change to Print)"
+	},
+	"commands": {
+		"print-or-preview": {
+			"suggested_key": {
+				"default": "Ctrl+P"
+			},
+			"description": "Print or Preview"
+		}
+	},
+	"permissions": [
+		"tabs"
+	]
+}
